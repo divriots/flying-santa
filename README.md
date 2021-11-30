@@ -4,7 +4,7 @@ Fun little christmas gimmick Web Component, works anywhere, based on [Lit](https
 
 [See landing page](https://divriots.github.io/flying-santa/)
 
-[See the full demos & code](https://webcomponents.dev/edit/YnTmdvNX77ccZIphMD0p/stories/index.stories.js)
+[See the full demos & code](https://webcomponents.dev/edit/MW0MuMtZp2VIRSFEzvQ0/stories/index.stories.js)
 
 ## Usage
 
