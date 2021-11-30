@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Flying Santa is a Christmas Web Component. Free Santa and make him fly through the page!" />
+  <meta name="author" content="‹div›RIOTS" />
+  <meta name="keywords"
+    content="web, component, webcomponent, webcomponents, flying santa, santa, reindeer, sleigh, christmas, lit, lit-element, lit.dev, buildWithLit, typescript" />
+  <meta name="theme-color" content="#E40A2D" />
+  <meta name="twitter:title" content="Flying Santa Component | by ‹div›RIOTS" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@webcomp_dev" />
+  <meta name="twitter:creator" content="@divRIOTS" />
+  <meta name="twitter:image" content="https://jorenbroekema.nl/og-flying-santa.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en-US" />
+  <meta property="og:site" content="https://divriots.github.io/flying-santa/" />
+  <meta property="og:title" content="Flying Santa Web Component | by ‹div›RIOTS" />
+  <meta property="og:description"
+    content="Flying Santa is a Christmas Web Component. Free Santa and make him fly through the page!" />
+  <meta property="og:image" content="https://jorenbroekema.nl/og-flying-santa.jpg" />
+  <meta property="og:image:alt" content="Display picture of Flying Santa" />
+  <title>Flying Santa Web Component</title>
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./font.css">
+  <link rel="stylesheet" href="./prism.css">
+  <script src="./dist/index.js" type="module"></script>
+</head>
+
+<body>
+  <flying-santa></flying-santa>
+  <h1 id="flying-santa">Flying Santa</h1>
+  <p>Fun little christmas gimmick Web Component, works anywhere, based on <a href="https://lit.dev">Lit</a> and <a
+      href="https://www.typescriptlang.org/">TypeScript</a>.</p>
+  <p><a href="https://webcomponents.dev/edit/MW0MuMtZp2VIRSFEzvQ0/stories/index.stories.js">See the demo</a></p>
+  <h2 id="usage">Usage</h2>
+  <pre><code class="language-sh">npm i @divriots/flying-santa</code></pre>
+  <pre><code class="language-html">&lt;script type="module"&gt;
+  import '@divriots/flying-santa';
+&lt;/script&gt;
+&lt;flying-santa&gt;&lt;/flying-santa&gt;</code></pre>
+  <p>Or if you want to extend the components</p>
+  <pre><code class="language-js">import { FlyingSanta, SantaPresent } from '@divriots/flying-santa';</code></pre>
+  <p>Or from a CDN without needing NPM</p>
+  <pre><code class="language-html">&lt;script type="module" src="https://unpkg.com/@divriots/flying-santa/dist/index.js?module"&gt;&lt;/script&gt;
+&lt;flying-santa&gt;&lt;/flying-santa&gt;</code></pre>
+  <h2 id="features">Features</h2>
+  <ul>
+    <li>Configure the interval speed at which Santa changes direction with the <code>change-speed</code> attribute
+      (default 5000, which is milliseconds)</li>
+    <li>Configure speed amplifier to change how fast Santa travels with the <code>speed</code> attribute (default 1)
+    </li>
+    <li>Change the distance at which Santa starts throwing presents with the <code>presents-distance</code> attribute
+      (default 100,
+      which
+      is in pixels)</li>
+    <li>Change the interval at which Santa throws presents with the <code>presents-interval</code> (default 100)</li>
+    <li>Configure the gravity strength pulling on the thrown presents with the <code>presents-drop-speed</code> (default
+      0.5)</li>
+  </ul>
+  <h2 id="spa-accumulating-santas">SPA accumulating Santas</h2>
+  <p>Note that Santa can be put anywhere on the page, and then it will insert itself into <code>&lt;html&gt;</code>
+    element and fly all over your page.
+    If you use SPA pattern and have the flying-santa on multiple pages, the number of Santas will accumulate.</p>
+  <p>Therefore, you probably want to clean up the Santas on route switching, there&#39;s a util for that:</p>
+  <pre><code class="language-js">import { cleanup } from '@divriots/flying-santa';
+
+// whenever you switch routes call this before the new page renders
+// if you're using a different tag-name for your Santa element, pass it as an argument
+cleanup();</code></pre>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/components/prism-core.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/plugins/autoloader/prism-autoloader.min.js"></script>
+</body>
+
+</html>
