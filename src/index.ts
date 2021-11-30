@@ -3,6 +3,7 @@ import {customElement, property} from 'lit/decorators.js';
 import santa from './santaURI';
 import './santa-present';
 import { SantaPresent } from './santa-present';
+export { SantaPresent };
 
 function rangeMap(number, inMin, inMax, outMin, outMax) {
   return ((number - inMin) * (outMax - outMin)) / (inMax - inMin) + outMin;

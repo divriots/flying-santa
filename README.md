@@ -4,7 +4,7 @@ Fun little christmas gimmick Web Component, works anywhere, based on [Lit](https
 
 [See landing page](https://divriots.github.io/flying-santa/)
 
-[See the full demos & code](https://webcomponents.dev/edit/YnTmdvNX77ccZIphMD0p/stories/index.stories.js)
+[See the full demos & code](https://webcomponents.dev/edit/MW0MuMtZp2VIRSFEzvQ0/stories/index.stories.js)
 
 ## Usage
 
@@ -19,10 +19,10 @@ import '@divriots/flying-santa';
 <flying-santa></flying-santa>
 ```
 
-Or if you want to extend the component
+Or if you want to extend the components
 
 ```js
-import { FlyingSanta } from '@divriots/flying-santa';
+import { FlyingSanta, SantaPresent } from '@divriots/flying-santa';
 ```
 
 Or from a CDN without needing NPM
