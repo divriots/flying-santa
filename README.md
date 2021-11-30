@@ -19,10 +19,10 @@ import '@divriots/flying-santa';
 <flying-santa></flying-santa>
 ```
 
-Or if you want to extend the component
+Or if you want to extend the components
 
 ```js
-import { FlyingSanta } from '@divriots/flying-santa';
+import { FlyingSanta, SantaPresent } from '@divriots/flying-santa';
 ```
 
 Or from a CDN without needing NPM
