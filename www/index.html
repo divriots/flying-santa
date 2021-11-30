@@ -10,7 +10,7 @@
   <meta name="author" content="‹div›RIOTS" />
   <meta name="keywords"
     content="web, component, webcomponent, webcomponents, flying santa, santa, reindeer, sleigh, christmas, lit, lit-element, lit.dev, buildWithLit, typescript" />
-  <meta name="theme-color" content="#eeeeee" />
+  <meta name="theme-color" content="#E40A2D" />
   <meta name="twitter:title" content="Flying Santa Component | by ‹div›RIOTS" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@webcomp_dev" />
@@ -55,9 +55,13 @@
       (default 5000, which is milliseconds)</li>
     <li>Configure speed amplifier to change how fast Santa travels with the <code>speed</code> attribute (default 1)
     </li>
-    <li>Change the distance at which Santa gets scared with the <code>scare-distance</code> attribute (default 100,
+    <li>Change the distance at which Santa starts throwing presents with the <code>presents-distance</code> attribute
+      (default 100,
       which
       is in pixels)</li>
+    <li>Change the interval at which Santa throws presents with the <code>presents-interval</code> (default 100)</li>
+    <li>Configure the gravity strength pulling on the thrown presents with the <code>presents-drop-speed</code> (default
+      0.5)</li>
   </ul>
   <h2 id="spa-accumulating-santas">SPA accumulating Santas</h2>
   <p>Note that Santa can be put anywhere on the page, and then it will insert itself into <code>&lt;html&gt;</code>

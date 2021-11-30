@@ -1,5 +1,5 @@
 :root {
-  --color-primary: #a716e0;
+  --color-primary: #E40A2D;;
 }
 
 html, body {
@@ -15,7 +15,8 @@ h1 {
 }
 
 h1, h2, h3 {
-  font-family: Happy Halloween, Arial, Helvetica, sans-serif;
+  font-family: Merry Christmas, Arial, Helvetica, sans-serif;
+  color: var(--color-primary);
 }
 
 h2 {
