@@ -10,12 +10,12 @@ html, body {
 }
 
 h1 {
+  font-family: Merry Christmas, Arial, Helvetica, sans-serif;
   text-align: center;
-  font-size: 4rem;
+  font-size: 10rem;
 }
 
 h1, h2, h3 {
-  font-family: Merry Christmas, Arial, Helvetica, sans-serif;
   color: var(--color-primary);
 }
 
