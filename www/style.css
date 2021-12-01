@@ -38,3 +38,87 @@ pre[class*="language-"] {
   border: none;
   border-radius: 0px;
 }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 5rem auto;
+  padding-bottom: 4rem;
+}
+
+.happy-holidays {
+  margin: 0;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+@media (max-width: 720px) {
+  footer {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .contact {
+    text-align: center;
+  }
+
+  .happy-holidays {
+    text-align: center;
+  }
+}
+
+footer .divriots {
+  display: block;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+footer .wcd-svg {
+  width: 25px;
+  vertical-align: middle;
+}
+
+footer a,
+footer a:link,
+footer a:visited,
+footer a:focus,
+footer a:hover,
+footer a:active {
+  text-decoration: none;
+  color: white;
+}
+
+.connect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.connect p,
+.contact p {
+  margin-top: 0;
+  color: white;
+}
+
+.connect p,
+.contact p:first-child {
+  text-transform: uppercase;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.socials svg {
+  height: 25px;
+}
+
+.contact p {
+  margin-bottom: 0.5rem;
+}
