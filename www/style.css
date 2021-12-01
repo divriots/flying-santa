@@ -48,21 +48,26 @@ footer {
   padding-bottom: 4rem;
 }
 
-footer .happy-holidays {
+.happy-holidays {
   margin: 0;
+  text-align: left;
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
   font-weight: 500;
   color: var(--color-primary);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 720px) {
   footer {
     flex-direction: column;
     gap: 4rem;
   }
 
   .contact {
+    text-align: center;
+  }
+
+  .happy-holidays {
     text-align: center;
   }
 }
@@ -73,9 +78,8 @@ footer .divriots {
   margin-bottom: 0.5rem;
 }
 
-footer .divriots svg {
-  width: 125px;
-  margin-left: 0.5rem;
+footer .wcd-svg {
+  width: 25px;
   vertical-align: middle;
 }
 
